@@ -7,7 +7,7 @@ This repository includes: 1- Designing an interface to control the bot base, 2- 
 
 2) arm3.jpeg
 
-3) Base.DB.png: Directione "SubTask 2" database image
+3) Base.DB.png: Directione Database image "SubTask 2"
 
 4) map.php "SubTask 3"
 
