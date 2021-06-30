@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <!--TASK2/SUB TASK6-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> BACE Control Interface</title>
+	<style>
+
+body{
+background-image:url('arm3.jpeg'); 
+background-repeat: no-repeat;
+background-color: #548ca4; 
+text-align:center;
+background-size: 1000px 900px;
+
+
+ 
+}
+.btn {
+  padding: 15px 15px;
+  font-size: 19px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;/* لون الكلام*/
+  background-color: #67C6DF;/* لون البوكس*/
+  border-radius: 20px; /* الاطراف*/
+  box-shadow: 0 9px #548ca4;/* لون الشادو*/
+  
+}
+.btn:active {
+  background-color: #548ca4;
+  transform: translateY(1px);
+}
+
+
+</style>
+</head>
+<body>
+    <!--TASK2/SUB TASK5-->
+  <!--Connecting the arm and the base on one page-->
+  <div class="center">
+    <button> <a href="Arm_Cntrol_Interface.html">Robot Arm</a></button>
+  </div>
+      <!--TASK2/SUB TASK1-->
+<form  action="map.php" method="POST">
+<!--FORWARD-->
+<div >
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button class="btn" name="forward" id="f">FORWARD</button>
+</div>	
+<!--LEFT & STOP &RIGHT-->
+<div>
+  <button class="btn" name="leftt" id="l">LEFT</button>
+  <button class="btn" name="stop" id="s">STOP</button>
+  <button  class="btn" name="rightt" id="r">RIGHT</button>
+</div>
+<!--BACKWARD-->
+<div >
+ <button class="btn" name="backward" id="b"> BACKWARD</button>
+</div>
+
+</form>
+<script>
+  
+var forward = document.getElementById("f");// the 1 
+forward.oninput = function() {
+  forward.innerHTML = this.value;
+}
+
+var left = document.getElementById("l");// the 2
+left.oninput = function() {
+ left.innerHTML = this.value;
+}
+var stop = document.getElementById("s");// the 3
+stop.oninput = function() {
+  stop.innerHTML = this.value;
+}
+var right = document.getElementById("r");// the 4
+ right.oninput = function() {
+   right.innerHTML = this.value;
+}
+var backward = document.getElementById("b");// the 5
+backward.oninput = function() {
+  backward.innerHTML = this.value;
+}
+
+
+</script>
+</body>
+</html>
